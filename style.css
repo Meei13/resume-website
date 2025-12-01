@@ -63,6 +63,7 @@ section {
     text-align: left; /* 文字置左 */
     border: 2px solid #add8e6; /* 淺藍色邊框 */
     display: flex;
+    justify-content: space-between; /* 文字和圖片分開 */
     align-items: center;
     gap: 20px;
 }
