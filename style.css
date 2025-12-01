@@ -11,17 +11,28 @@ body {
     color: #333;
     background-color: #f9f9f9;
     padding: 0 20px;
+
 }
 
 /* Header styles */
 header {
-    background-color: #0078d7;
+    background-color: #51697c;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
+    text-align: left; /* 文字置左 */
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.header-content h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin: 5px 0;
 }
 
 header nav ul {
@@ -49,13 +60,28 @@ section {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left; /* 文字置左 */
+    border: 2px solid #add8e6; /* 淺藍色邊框 */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+section img {
+    max-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 section h1 {
     margin-bottom: 20px;
     font-size: 1.8em;
     color: #0078d7;
-    text-align: center;
+}
+
+section p, section ul, section div {
+    font-size: 1.1em;
+    color: #333;
 }
 
 /* About section */
