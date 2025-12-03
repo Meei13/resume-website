@@ -16,7 +16,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #51697c;
+    background-color: #9c92cd;
     color: #fff;
     padding: 20px;
     text-align: left;
@@ -65,7 +65,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ffcc00;
+    color: #ffa6e9;
 }
 
 /* Section styles */
@@ -76,7 +76,7 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left; /* 文字置左 */
-    border: 2px solid #add8e6; /* 淺藍色邊框 */
+    border: 2px solid #ecd7ff; /* 淺藍色邊框 */
     display: flex;
     justify-content: space-between; /* 文字和圖片分開 */
     align-items: center;
@@ -92,7 +92,7 @@ section img {
 section h1 {
     margin-bottom: 20px;
     font-size: 1.8em;
-    color: #0078d7;
+    color: #6f63a9;
 }
 
 section p, section ul, section div {
@@ -107,6 +107,57 @@ section p, section ul, section div {
 }
 
 /* Skills section */
+#skills {
+    margin: 40px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    border: 2px solid #6f63a9; /* 藍色框框 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#skills h1 {
+    font-size: 1.8em;
+    color: #6f63a9;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* 如果螢幕寬度不足，區塊會自動換行 */
+    justify-content: space-between; /* 區塊之間的間距 */
+    gap: 20px; /* 區塊之間的間距 */
+}
+
+.skill-box {
+    flex: 1 1 calc(25% - 20px); /* 每個區塊占 25% 寬度，減去間距 */
+    background: #fff0ff; /* 淺藍色背景 */
+    border: 2px solid #6f63a9; /* 藍色框框 */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-box h2 {
+    font-size: 1.2em;
+    color: #6f63a9;
+    margin-bottom: 10px;
+}
+
+.skill-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.skill-box p {
+    font-size: 1em;
+    color: #333;
+}
+
 #skills ul {
     list-style: none;
     display: flex;
@@ -117,7 +168,7 @@ section p, section ul, section div {
 }
 
 #skills ul li {
-    background: #0078d7;
+    background: #6f63a9;
     color: #fff;
     padding: 10px 15px;
     border-radius: 5px;
@@ -131,7 +182,7 @@ section p, section ul, section div {
 
 #experience h2 {
     font-size: 1.2em;
-    color: #0078d7;
+    color: #6f63a9;
 }
 
 #experience p {
@@ -145,14 +196,71 @@ section p, section ul, section div {
 }
 
 #portfolio a {
-    color: #0078d7;
+    color: #6f63a9;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 #portfolio a:hover {
-    color: #ffcc00;
+    color: #ffa6e9;
+}
+
+/* Portfolio section */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f0f8ff;
+    border: 2px solid #6f63a9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(100% - 20px); /* 每張卡片占整行寬度 */
+}
+
+.portfolio-card img {
+    width: 500px; /* 調整圖片寬度 */
+    height: auto; /* 保持圖片比例 */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-content {
+    flex: 1;
+}
+
+.portfolio-card h2 {
+    font-size: 1em;
+    color: #6f63a9;
+    margin-bottom: 10px;
+}
+
+.portfolio-card p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.portfolio-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #dfd2fd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.portfolio-card a:hover {
+    background: #8854bb;
 }
 
 /* Contact section */
@@ -174,12 +282,12 @@ form input, form textarea, form button {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #0078d7;
+    border-color: #6f63a9;
     outline: none;
 }
 
 form button {
-    background: #0078d7;
+    background: #6f63a9;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -187,7 +295,7 @@ form button {
 }
 
 form button:hover {
-    background: #005bb5;
+    background: #6f63a9;
 }
 
 #contact div {
