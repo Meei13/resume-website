@@ -36,19 +36,23 @@
             <!-- 畫畫區塊 -->
             <div class="skill-box">
                 <h2>畫畫</h2>
-                <img src="assets/images/witch.jpg" alt="畫畫圖片">
+                <img src="assets/images/witch.jpg" class="fade-in">
+                <img src="assets/images/witch.jpg" class="zoom-img">
+
 
             </div>
             <!-- 建模區塊 -->
             <div class="skill-box">
                 <h2>建模</h2>
-                <img src="assets/images/dice.jpg" alt="建模圖片">
+                <img src="assets/images/dice.jpg" class="fade-in">
+                <img src="assets/images/dice.jpg" class="zoom-img">
 
             </div>
             <!-- 影片製作區塊 -->
             <div class="skill-box">
                 <h2>動畫製作</h2>
-                <img src="assets/images/random-pose.gif" alt="影片製作圖片">
+                <img src="assets/images/random-pose.gif" class="fade-in">
+                <img src="assets/images/random-pose.gif" class="zoom-img">
 
             </div>
 
@@ -120,5 +124,18 @@
         </div>
 <img src
     <script src="js/scripts.js"></script>
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            }
+          });
+        });
+      
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+      </script>
+      
 </body>
 </html>
