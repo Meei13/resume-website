@@ -272,17 +272,22 @@ section p, section ul, section div {
   }
   
 
-.fade-zoom {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  }
-  
-  .fade-zoom.show {
-    opacity: 1;
-    transform: scale(1);
-  }
-  
+  .image-container img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* 平移效果（頁面載入後或透過 class） */
+.image-container img.move {
+    transform: translateX(0px) translateY(10px);
+}
+
+/* 滑鼠移動傾斜效果 */
+.image-container img:hover {
+    transform: translateX(0px) translateY(10px) rotateY(10deg);
+}
+
 
 /* Contact section */
 form {
