@@ -263,6 +263,27 @@ section p, section ul, section div {
     background: #547fbb;
 }
 
+.zoom-img {
+    transition: transform 0.4s ease;
+  }
+  
+  .zoom-img:hover {
+    transform: scale(1.05);
+  }
+  
+
+.fade-zoom {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-zoom.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+
 /* Contact section */
 form {
     display: flex;

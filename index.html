@@ -37,19 +37,20 @@
             <!-- 畫畫區塊 -->
             <div class="skill-box">
                 <h2>畫畫</h2>
-                <img src="assets/images/witch.jpg" alt="畫畫圖片">
+                <img src="assets/images/witch.jpg" class="fade-zoom">
+
 
             </div>
             <!-- 建模區塊 -->
             <div class="skill-box">
                 <h2>建模</h2>
-                <img src="assets/images/dice.jpg" alt="建模圖片">
+                <img src="assets/images/dice.jpg" class="fade-zoom">
 
             </div>
             <!-- 影片製作區塊 -->
             <div class="skill-box">
                 <h2>動畫製作</h2>
-                <img src="assets/images/random-pose.gif" alt="影片製作圖片">
+                <img src="assets/images/random-pose.gif" class="fade-zoom">
 
             </div>
 
@@ -76,7 +77,7 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio">
-resume-websi        <h1>作品集</h1>
+        <h1>作品集</h1>
         <div class="portfolio-container">
             <!-- 第一件作品 -->
             <div class="portfolio-card">
@@ -121,5 +122,19 @@ resume-websi        <h1>作品集</h1>
         </div>
 <img src
     <script src="js/scripts.js"></script>
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            }
+          });
+        });
+      
+        document.querySelectorAll('.fade-zoom').forEach(el => observer.observe(el));
+      </script>
+      
+
 </body>
 </html>
