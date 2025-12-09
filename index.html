@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        </style>
+        
+
     <!-- Header -->
     <header id="header">
         
@@ -18,6 +26,12 @@
                 <p>學號：414570215</p>
             </div>
         </div>
+        <button onclick="scrollToSection('#about')">關於我</button>
+        <button onclick="scrollToSection('#skills')">技能</button>
+        <button onclick="scrollToSection('#experience')">經歷</button>
+        <button onclick="scrollToSection('#portfolio')">作品集</button>
+        <button onclick="scrollToSection('#contact')">聯絡方式</button>
+
     </header>
 
     <!-- About Me Section -->
@@ -57,23 +71,30 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
+<!-- Experience Section -->
+<section id="experience">
+    <div>
+        <h1>經歷</h1>
         <div>
-            <h1>經歷</h1>
-            <div>
-                <h2>參加3D列印社</h2>
-                <p>在高一時，我參加了3D列印社團，學習使用Tinkercad進行3D建模，也在過程中發現3D建模可以應用於很多領域。</p>
-                <h2>接觸程式設計</h2>
-                <p>在高二選修課進階程式設計中，我接觸了Python，製作了一款貪食蛇小遊戲，也在課程結束後自行加入了「敵人蛇」的特殊機制。雖然開發過程中遇到了很多困難，但我最後還是靠著查資料與不斷嘗試，完成了這個機制，這段經驗也讓我學習到如何獨立解決問題。</p>
-                <h2>我的自主學習計畫</h2>
-                <p>我在我的自主學習計畫中學習利用Live2D 這個軟體製作了一個人物模型。雖然我個性偏內向，但因為對這個計畫很有自信，所以我主動參加了校內自主學習競賽，上台發表我的作品，獲得了優選，這也讓我更有信心追求創意與技術的結合。</p>
-            </div>
+            <h2>參加3D列印社</h2>
+            <p>在高一時，我參加了3D列印社團，學習使用Tinkercad進行3D建模，也在過程中發現3D建模可以應用於很多領域。</p>
+
+            <h2>接觸程式設計</h2>
+            <p>在高二選修課進階程式設計中，我接觸了Python，製作了一款貪食蛇小遊戲，也在課程結束後自行加入了「敵人蛇」的特殊機制。雖然開發過程中遇到了很多困難，但我最後還是靠著查資料與不斷嘗試，完成了這個機制，這段經驗也讓我學習到如何獨立解決問題。</p>
+
+            <h2>我的自主學習計畫</h2>
+            <p>我在我的自主學習計畫中學習利用Live2D 這個軟體製作了一個人物模型。雖然我個性偏內向，但因為對這個計畫很有自信，所以我主動參加了校內自主學習競賽，上台發表我的作品，獲得了優選，這也讓我更有信心追求創意與技術的結合。</p>
         </div>
+    </div>
+
+    <!-- 🖼 圖片容器（排版會套用在這裡） -->
+    <div class="experience_images">
         <img src="assets/images/two_dice.jpg" class="zoom-img">
         <img src="assets/images/snack.png" class="zoom-img">
         <img src="assets/images/Live2D_model.png" class="zoom-img">
-    </section>
+    </div>
+</section>
+
 
     <!-- Portfolio Section -->
     <section id="portfolio">
@@ -133,6 +154,21 @@
         });
       
         document.querySelectorAll('.fade-zoom').forEach(el => observer.observe(el));
+
+        const headerHeight = 80; 
+window.scrollTo({
+    top: target.offsetTop - headerHeight,
+    behavior: 'smooth'
+});
+
+
+function scrollToSection(id) {
+    const target = document.querySelector(id);
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+
+
       </script>
       
 

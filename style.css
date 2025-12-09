@@ -68,6 +68,11 @@ header nav ul li a:hover {
     color: #f0f8ff;
 }
 
+section {
+    scroll-margin-top: 180px; /* header 高度 */
+}
+
+
 /* Section styles */
 section {
     margin: 40px 0;
@@ -189,6 +194,14 @@ section p, section ul, section div {
     margin: 5px 0;
 }
 
+.experience_images {
+    display: flex;
+    flex-direction: column; /* 直向排 */
+    gap: 40px;
+    margin-top: 20px;
+}
+
+
 /* Portfolio section */
 #portfolio div {
     text-align: left;
@@ -283,6 +296,29 @@ section p, section ul, section div {
     transform: scale(1);
   }
   
+/* 基本樣式 */
+button, .btn {
+    padding: 10px 20px;          /* 內距 */
+    background-color: #aedbfb;   /* 背景色 */
+    color: #45578b;                /* 字體顏色 */
+    border: none;                /* 移除邊框 */
+    border-radius: 5px;          /* 圓角 */
+    cursor: pointer;             /* 滑鼠變手型 */
+    font-size: 16px;
+    transition: all 0.3s ease;  /* 平滑過渡 */
+}
+
+/* 滑鼠懸停效果 */
+button:hover, .btn:hover {
+    background-color: #7eb9e2;
+    transform: scale(1.05);      /* 微放大 */
+}
+
+/* 按下去的效果 */
+button:active, .btn:active {
+    transform: scale(0.95);
+}
+
 
 /* Contact section */
 form {
@@ -328,6 +364,7 @@ form button:hover {
 #contact p {
     margin: 10px 0;
 }
+
 
 /* Responsive design */
 @media (max-width: 768px) {
