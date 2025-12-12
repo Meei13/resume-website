@@ -319,6 +319,28 @@ button:active, .btn:active {
     transform: scale(0.95);
 }
 
+.project {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 40px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.progress {
+    height: 60%;
+    background: linear-gradient(90deg, #6a5acd, #e0bdff);
+    color: #fff;
+    text-align: right;
+    line-height: 20px;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
 
 /* Contact section */
 form {
