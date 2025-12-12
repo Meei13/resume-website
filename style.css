@@ -387,6 +387,31 @@ form button:hover {
     margin: 10px 0;
 }
 
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag {
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #ebecf8;
+    transition: 0.3s;
+    cursor: default;
+  }
+  
+  /* 用 class 控制大小 */
+  .tag.small { font-size: 12px; }
+  .tag.medium { font-size: 16px; }
+  .tag.large { font-size: 20px; }
+  
+  /* hover 效果 */
+  .tag:hover {
+    background: #dcdcff;
+    transform: scale(1.1);
+  }
+  
 
 /* Responsive design */
 @media (max-width: 768px) {
