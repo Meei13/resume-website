@@ -319,6 +319,28 @@ button:active, .btn:active {
     transform: scale(0.95);
 }
 
+.project {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 40px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.progress {
+    height: 60%;
+    background: linear-gradient(90deg, #6a5acd, #e0bdff);
+    color: #fff;
+    text-align: right;
+    line-height: 20px;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
 
 /* Contact section */
 form {
@@ -365,6 +387,31 @@ form button:hover {
     margin: 10px 0;
 }
 
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag {
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #ebecf8;
+    transition: 0.3s;
+    cursor: default;
+  }
+  
+  /* 用 class 控制大小 */
+  .tag.small { font-size: 12px; }
+  .tag.medium { font-size: 16px; }
+  .tag.large { font-size: 20px; }
+  
+  /* hover 效果 */
+  .tag:hover {
+    background: #dcdcff;
+    transform: scale(1.1);
+  }
+  
 
 /* Responsive design */
 @media (max-width: 768px) {
